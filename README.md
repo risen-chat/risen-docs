@@ -10,4 +10,4 @@ Risen은 클라이언트 측에서 모든 메시지를 암호화하고, 서버�
 ## 팀인원
 
 Server: [이세민](https://github.com/wwwcomcomcomcom),[김태은](https://github.com/snowykte0426), [조수민](https://github.com/suuuuuuminnnnnn)
-App: ?
+App: [이주언](https://github.com/aiden30015), [문승덕](https://github.com/bluemoon983)
