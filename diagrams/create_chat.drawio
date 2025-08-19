@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="페이지-1" id="Bq9yzXhH35B1s6Mvf7I0">
+    <mxGraphModel dx="595" dy="321" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-2" value="채팅 생성하기" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="1">
+          <mxGeometry x="160" y="400" width="380" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-3" value="Client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="180" y="435" width="100" height="445" as="geometry" />
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="brOKY5jeN1lyqdQz2yrQ-3">
+          <mxGeometry x="45" y="205" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-8" value="이전 채팅을 복호화하여&lt;div&gt;next nonce값을 얻어냄&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="brOKY5jeN1lyqdQz2yrQ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="185" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="215" />
+            </Array>
+            <mxPoint x="55" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="brOKY5jeN1lyqdQz2yrQ-3">
+          <mxGeometry x="45" y="272" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-11" value="nonce, key로 채팅을 암호화함" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="brOKY5jeN1lyqdQz2yrQ-10" parent="brOKY5jeN1lyqdQz2yrQ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="252" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="282" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-4" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="414" y="435" width="100" height="455" as="geometry" />
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-5" value="nonce를 위한 이전 채팅 요청&lt;br&gt;보통은 클라이언트에캐싱되어있을것임&lt;br&gt;아무것도 캐싱이 안되어있다면 첫 채팅부터&lt;div&gt;불러와서 꼬리를 따라 올라가야 할것임&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="550" as="sourcePoint" />
+            <mxPoint x="463.5" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-6" value="이전 채팅을 반환함" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="463.5000000000002" y="582.9999999999998" as="sourcePoint" />
+            <mxPoint x="229.4473684210525" y="582.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-12" value="암호화된 채팅을 보냄" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="brOKY5jeN1lyqdQz2yrQ-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="230" y="760" as="sourcePoint" />
+            <mxPoint x="310" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="brOKY5jeN1lyqdQz2yrQ-13" value="저장 후 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;entryX=0.5;entryY=0.843;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="brOKY5jeN1lyqdQz2yrQ-4" target="brOKY5jeN1lyqdQz2yrQ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="810" as="sourcePoint" />
+            <mxPoint x="380" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
