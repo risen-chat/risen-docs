@@ -1,9 +1,81 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
   <diagram name="페이지-1" id="CVwxCA9k_kb5EhJwOtcv">
-    <mxGraphModel dx="1042" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="561" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-1" value="채팅방에 초대하기" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="395" width="640" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-2" value="Cleint A" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="140" y="435" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9c-B8WiNsxjSVmU7n8A6-2">
+          <mxGeometry x="45" y="75" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-6" value="Room의 Key 암호화&lt;div&gt;복호화용 임시키 생성&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="9c-B8WiNsxjSVmU7n8A6-5" parent="9c-B8WiNsxjSVmU7n8A6-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="55" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-3" value="Server" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="350" y="435" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-17" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9c-B8WiNsxjSVmU7n8A6-3">
+          <mxGeometry x="45" y="255" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-18" value="암호화된 Key 삭제" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="9c-B8WiNsxjSVmU7n8A6-17" parent="9c-B8WiNsxjSVmU7n8A6-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="235" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-4" value="Client B" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="560" y="435" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="9c-B8WiNsxjSVmU7n8A6-4">
+          <mxGeometry x="45" y="255" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-14" value="Key 암호화&lt;div&gt;해제후 채팅방&lt;/div&gt;&lt;div&gt;참여&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="9c-B8WiNsxjSVmU7n8A6-13" parent="9c-B8WiNsxjSVmU7n8A6-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="235" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="80" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-7" value="암호화된 Key 업로드" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="9c-B8WiNsxjSVmU7n8A6-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="560" as="sourcePoint" />
+            <mxPoint x="270" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-8" value="" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=right;labelPosition=left;verticalLabelPosition=top;labelBackgroundColor=none;" edge="1" parent="1" target="9c-B8WiNsxjSVmU7n8A6-4">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="190" y="590" as="sourcePoint" />
+            <mxPoint x="270" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-10" value="임시키를 담은 초대링크 전달" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="570" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-11" value="암호화된 Key 요청" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="9c-B8WiNsxjSVmU7n8A6-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="610" y="620" as="sourcePoint" />
+            <mxPoint x="690" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9c-B8WiNsxjSVmU7n8A6-12" value="암호화된 Key 전달" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" target="9c-B8WiNsxjSVmU7n8A6-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="650" as="sourcePoint" />
+            <mxPoint x="320" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
