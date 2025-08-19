@@ -1,0 +1,21 @@
+# Chat 생성하기
+
+Server에서 Room의 마지막 채팅을 읽어온다.
+
+마지막 채팅의 메세지를 복호화하여, Next Nonce 값을 얻는다.
+
+입력받은 메세지를 Key와 Nonce로 암호화한다.
+
+Server에 암호화된 메세지를 보내서 채팅 생성을 요청한다.
+
+## 미해결 문제
+
+실시간 채팅이다보니 동시에 여러 클라이언트가 채팅 생성을 시도하려는 경우가 발생할 수 있다.
+이 경우 한개의 next nonce로 여러개의 채팅이 암호화 되어 보내지므로, nonce가 한번만 사용되는걸
+보장할 수 없을 뿐만 아니라 linked list(prev, next) 자료구조 기반의 채팅 연결이 깨질 수 있다.
+
+<iframe
+  frameborder="0"
+  style={{ width: "100%", height: "573px" }}
+  src="https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=create_chat.drawio&dark=auto#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Frisen-chat%2Frisen-docs%2Fmain%2Fdiagrams%2Fcreate_chat.drawio"
+></iframe>
